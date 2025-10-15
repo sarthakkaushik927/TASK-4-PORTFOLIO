@@ -8,15 +8,15 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section id="testimonials" className="py-20 bg-white">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-12">
-          <h3 className="text-gray-500 font-medium">Clients Feedback</h3>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">Customer testimonials</h2>
+    <section id="testimonials" className="py-20 bg-purple-100">
+      <div className="container mx-auto px-6 ">
+        <div className="text-center mb-12 ">
+          <h3 className="bg-purple-500 hover:scale-110 duration-300 text-lg font-medium hover:bg-gradient-to-bl from-purple-700 to-pink-500 bg-clip-text text-transparent">Clients Feedback</h3>
+          <h2 className="hover:scale-110 duration-300 text-3xl md:text-4xl font-bold bg-gradient-to-bl from-purple-700 to-pink-500 bg-clip-text text-transparent">Customer testimonials</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="border border-gray-200 rounded-lg p-6">
+            <div key={index} className="border border-gray-200 rounded-lg p-6 hover:shadow-xl hover:scale-105 hover:duration-300 transition-all hover:border-purple-500 bg-white">
               <div className="text-yellow-400 mb-4">{'★★★★★'}</div>
               <p className="text-gray-600 mb-6 italic">{testimonial.text}</p>
               <div className="flex items-center">

@@ -1,9 +1,12 @@
 import React from 'react';
+import Music from "/music.png"
+import TODO from "/TODO.png"
+import CAROUSEL from "/CAROUSEL-REGISTRATION.png"
 
 // Reusable ProjectCard component
 const ProjectCard = ({ title, description, technologies, link, imageUrl }) => {
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+    <div className="bg-white rounded-lg shadow-md overflow-hidden transform hover:border-2 hover:border-purple-500 hover:-translate-y-4 transition-transform duration-300 hover:shadow-2xl  ">
       <img src={imageUrl} alt={title} className="w-full h-56 object-cover" />
       <div className="p-6">
         <h3 className="text-xl font-bold text-gray-800 mb-2">{title}</h3>
@@ -27,17 +30,17 @@ const ProjectCard = ({ title, description, technologies, link, imageUrl }) => {
 // Main Portfolio Section
 const PortfolioSection = () => {
     const projects = [
-      { title: "Ahuse", description: "A web design project for a modern furniture store.", technologies: "React, Tailwind CSS", link: "#", imageUrl: "https://placehold.co/600x400/e9d5ff/1e1b4b?text=Ahuse" },
-      { title: "App Dashboard", description: "A data visualization dashboard for a SaaS product.", technologies: "React, D3.js, Node.js", link: "#", imageUrl: "https://placehold.co/600x400/e9d5ff/1e1b4b?text=App+Dashboard" },
-      { title: "Easy Rent", description: "A mobile-first platform for rental services.", technologies: "React Native, Firebase", link: "#", imageUrl: "https://placehold.co/600x400/e9d5ff/1e1b4b?text=Easy+Rent" },
+      { title: "Music App", description: "A web design project for a modern Music layout.", technologies: "HTML, CSS, JavaScript", link: "https://task-1-music-player.vercel.app/", imageUrl: Music },
+      { title: "", description: "A Web app integrated with Carousel and registration form.", technologies: "HTML, CSS, JavaScript", link: "https://task-2-loginpage-and-carousel.vercel.app/", imageUrl: TODO },
+      { title: "TODO LIST", description: "A Web app to save your daily tasks.", technologies: "React , Tailwind CSS", link: "https://todo-list927.netlify.app/", imageUrl: CAROUSEL },
     ];
 
     return (
-        <section id="portfolio" className="py-20 bg-gray-50">
+        <section id="portfolio" className="py-20 bg-purple-100">
           <div className="container mx-auto px-6">
-            <div className="text-center mb-12">
-              <h3 className="text-gray-500 font-medium">Recent Projects</h3>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-800">My Portfolio</h2>
+            <div className="text-center mb-12 flex flex-col items-center justify-center">
+              <h3 className="inline-block text bg-purple-500 transition duration-300 hover:scale-110 text-lg font-medium hover:bg-gradient-to-bl from-purple-700 to-pink-500 bg-clip-text text-transparent">Recent Projects</h3>
+              <h2 className="inline-block text-3xl md:text-4xl font-bold bg-gradient-to-bl from-purple-700 to-pink-500 bg-clip-text text-transparent hover:scale-110 duration-300">My Portfolio</h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {projects.map((project, index) => (

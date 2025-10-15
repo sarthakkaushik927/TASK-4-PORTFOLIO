@@ -12,15 +12,17 @@ const skills = [
 
 const SkillsSection = () => {
   return (
-    <section id="skills" className="py-20 bg-gray-50">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-12">
-          <h3 className="text-gray-500 font-medium">My Skills</h3>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">My Expertise</h2>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <section id="skills" className="py-20 bg-purple-100 ">
+      <div className="container mx-auto px-6 ">
+        
+          <div className="text-center mb-12 flex flex-col items-center justify-center">
+          <h3 className=" transition duration-300 hover:scale-x-110 text-lg font-medium bg-purple-500 hover:bg-gradient-to-bl from-purple-700 to-pink-500 bg-clip-text text-transparent">My Skills</h3>
+          <h2 className=" transition duration-300 hover:scale-x-110 bg-gradient-to-bl from-purple-700 to-pink-500 bg-clip-text text-transparent text-3xl md:text-4xl font-bold ">My Expertise</h2>
+          </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8  ">
           {skills.map((skill, index) => (
-            <div key={index} className="bg-white p-8 rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col items-center">
+            <div key={index} className="bg-white p-8 rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col items-center hover:scale-105 hover:duration-300 ">
 
 
               <div className="mb-4"><img className='rounded-lg' src={`${skill.img}`} alt={skill.title} /></div>

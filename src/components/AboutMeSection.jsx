@@ -1,30 +1,46 @@
 import React from 'react';
+import Hero from '/Hero-removebg-preview.png'
 
 const AboutMeSection = () => {
   return (
-    <section id="about" className="py-20 bg-white">
-      <div className="container mx-auto flex flex-col md:flex-row items-center px-6">
-        {/* Left Side: Image */}
-        <div className="md:w-1/2 mb-10 md:mb-0">
-            <img 
-                src="https://placehold.co/500x500/1e1b4b/FFFFFF?text=About+Me" 
-                alt="About Segunfunmi" 
-                className="rounded-lg w-full max-w-md mx-auto" 
-            />
-        </div>
-        {/* Right Side: Text Content */}
-        <div className="md:w-1/2 md:pl-12 text-center md:text-left">
-            <h3 className="text-gray-500 font-medium">About</h3>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 my-4">About Me</h2>
-            <p className="text-gray-600 mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a Seltus at, mattis Seltus. Sed aliquam Seltus vitae Seltus, a Seltus a Seltus.
-            </p>
-            <p className="text-gray-600">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a Seltus at, mattis Seltus.
-            </p>
-        </div>
+    <section id="about" className="py-20 bg-purple-100 min-h-[100vh] ">
+      <div className='text-center flex flex-col '>
+        
+          <h2 className="hover:scale-x-110 inline-block  duration-300 bg-gradient-to-bl from-purple-700 to-pink-500 bg-clip-text text-transparent text-3xl md:text-4xl font-bold my-1">About Me</h2>
       </div>
-    </section>
+      
+      <div className="container mx-auto flex flex-col md:flex md:flex-row items-center px-6 h-[60vh]">
+        
+        
+
+        <div className="md:w-1/2  mb-16 md:mb-0">
+         
+          <div className=" md:w-130 md:h-[349px] md:overflow-y-visible bg-purple-300 rounded-4xl translate-y-20 shadow-2xl hover:scale-105 hover:duration-300 transition-all ">
+          
+                  <img
+                      src={Hero}
+                      className=" bg-transparent rounded-lg w-full md:w-120 md:max-w-md mx-auto md:h-120 md:translate-y-[-130px] hover:translate-y-2] hover:duration-300 transition-all " 
+                  />
+                  
+                </div>
+          
+        </div>
+        
+        <div className="md:w-1/2 md:pl-12 text-center md:text-center flex flex-col justify-center ">
+         <h2 className="hover:scale-x-110 inline-block font-medium bg-purple-500 hover:bg-gradient-to-bl from-purple-700 to-pink-500 bg-clip-text text-transparent  duration-300 my-4 text-2xl">About</h2>
+          
+        
+        
+        <p className="text-gray-600 mb-4 hover:scale-105 duration-300">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a Seltus at, mattis Seltus. Sed aliquam Seltus vitae Seltus, a Seltus a Seltus.
+        </p>
+        <p className="text-gray-600 hover:scale-105 duration-300">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a Seltus at, mattis Seltus.
+        </p>
+      </div>
+    </div>
+    
+    </section >
   );
 };
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { TbHexagonLetterSFilled } from "react-icons/tb"
 
 const Footer = () => {
     const navLinks = [
@@ -9,10 +10,13 @@ const Footer = () => {
     ];
     
     return (
-        <footer className="bg-gray-800 text-white py-12">
+        <footer  className="bg-gray-800 text-white py-12">
             <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+                <div className="owner flex items-center space-x-4 mb-6 md:mb-0">
+                <TbHexagonLetterSFilled className="text-4xl" />
                 <div className="text-2xl font-bold mb-6 md:mb-0">
-                    Segunfunmi<span className="text-purple-400">.</span>
+                    Sarthak-Verse
+                </div>
                 </div>
                 <div className="flex space-x-8 mb-6 md:mb-0">
                     {navLinks.map(link => (
@@ -22,7 +26,7 @@ const Footer = () => {
                     ))}
                 </div>
                 <div>
-                    <p className="text-gray-400 text-sm">&copy; 2025 Segunfunmi. All rights reserved.</p>
+                    <p className="text-gray-400 text-sm">&copy; 2025 Sarthak-Verse. All rights reserved.</p>
                 </div>
             </div>
         </footer>

@@ -4,28 +4,30 @@ import Hero from '/Hero-removebg-preview.png'
 
 const HeroSection = () => {
   return (
-    <section id="home" className="bg-purple-200 container mx-auto flex flex-col md:flex-row md:justify-center gap-12 py-20 px-6 min-h-screen">
-      {/* Left Side: Text Content */}
-      <div className="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
-        <h3 className="text-gray-500 font-medium">Hey, I am Segun</h3>
-        <h1 className="text-4xl md:text-6xl font-bold text-gray-800 my-4 leading-tight">
-          I create <span className="text-purple-600">product design</span> and brand experience
+    <section id="home" className="bg-purple-100 container mx-auto flex flex-col md:flex-row md:justify gap-12 py-20 px-6 min-h-[75vh] min-w-screen">
+      
+      <div className="md:w-1/2 text-center md:text-left mb-10 md:mb-0 ">
+        <p className="inline-block text-gray-500 font-bold  duration-300 hover:scale-x-110 hover:scale-y-100 ">Hey, I am SARTHAK</p>
+        <h1 className="text-4xl md:text-6xl font-bold text-gray-800 my-4 leading-tight duration-300 hover:scale-x-105 hover:scale-y-100 ">
+          I create <span className="bg-gradient-to-bl from-purple-700 to-pink-500 bg-clip-text text-transparent ">product design</span> and brand experience
         </h1>
-        <p className="text-gray-600 mb-8 max-w-lg mx-auto md:mx-0">
+        <p className="text-gray-600 mb-8 max-w-lg mx-auto md:mx-0 font-bold duration-300 hover:scale-x-110 hover:scale-y-100">
           I am a web developer specializing in React.js and UI design.
         </p>
-        <button className="bg-purple-600 text-white py-3 px-8 rounded-lg font-medium hover:bg-purple-700 transition duration-300">
+        <a href="#contact">
+        <button className="bg-gradient-to-bl from-purple-700 to-pink-500 text-white py-3 px-8 rounded-lg font-medium hover:bg-purple-700 transition duration-300 hover:scale-110 ">
           Get In Touch
-        </button>
+        </button></a>
       </div>
 
-      {/* Right Side: Image */}
-      <div className="md:w-120 h-full md:overflow-y-visible bg-purple-300 rounded-4xl">
-        
-        <img 
+
+      <div className=" md:w-130 md:h-[349px] md:overflow-y-visible bg-purple-300 rounded-4xl  translate-y-20 shadow-2xl hover:scale-105 hover:duration-300 transition-all w-full ">
+
+        <img
             src={Hero}
-            className=" rounded-lg w-full max-w-md mx-auto" 
+            className="bg-transparent rounded-lg w-full  md:w-120 md:max-w-md mx-auto  md:translate-y-[-100px]  hover:duration-300 transition-all " 
         />
+        
       </div>
     </section>
   );

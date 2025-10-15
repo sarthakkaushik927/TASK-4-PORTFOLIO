@@ -30,33 +30,33 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gray-50">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-12">
-          <h3 className="text-gray-500 font-medium">Get In Touch</h3>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">Contact me</h2>
+    <section id="contact" className="py-20 bg-purple-100 ">
+      <div className="container mx-auto px-6 bg-purple-100 ">
+        <div className="text-center mb-12 flex flex-col items-center justify-center">
+          <h3 className="inline-block bg-amber-50 font-medium hover:scale-105 duration-300 bg-gradient-to-bl from-purple-700 to-pink-500 bg-clip-text text-transparent">Get In Touch</h3>
+          <h2 className="inline-block hover:scale-105 duration-300 text-3xl md:text-4xl font-bold bg-gradient-to-bl from-purple-700 to-pink-500 bg-clip-text text-transparent">Contact me</h2>
         </div>
-        <form onSubmit={handleSubmit} className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <form onSubmit={handleSubmit} className="max-w-4xl mx-auto  p-8 rounded-lg shadow-lg bg-purple-300">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6 ">
             <div>
-              <label htmlFor="name" className="block text-gray-700 font-medium mb-2">Name</label>
-              <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600" />
+              <label htmlFor="name" className="block  text-gray-700 font-medium mb-2 ">Name</label>
+              <input type="text" placeholder='Your Name' id="name" name="name" value={formData.name} onChange={handleChange} className=" w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600 bg-white shadow-md hover:scale-105 duration-300" />
             </div>
             <div>
-              <label htmlFor="email" className="block text-gray-700 font-medium mb-2">Email</label>
-              <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600" />
+              <label htmlFor="email"  className="block text-gray-700 font-medium mb-2">Email</label>
+              <input type="email" placeholder='Your Email' id="email" name="email" value={formData.email} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600 bg-white shadow-md hover:scale-105 duration-300" />
             </div>
           </div>
           <div className="mb-6">
-            <label htmlFor="subject" className="block text-gray-700 font-medium mb-2">Subject</label>
-            <input type="text" id="subject" name="subject" value={formData.subject} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600" />
+            <label htmlFor="subject"  className="block text-gray-700 font-medium mb-2">Subject</label>
+            <input type="text" placeholder="Your purpose in brief" id="subject" name="subject" value={formData.subject} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600 bg-white shadow-md hover:scale-105 duration-300" />
           </div>
           <div className="mb-6">
             <label htmlFor="message" className="block text-gray-700 font-medium mb-2">Message</label>
-            <textarea id="message" name="message" value={formData.message} onChange={handleChange} rows="5" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600"></textarea>
+            <textarea id="message" placeholder='Type here....' name="message" value={formData.message} onChange={handleChange} rows="5" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600 bg-white shadow-md hover:scale-105 duration-300"></textarea>
           </div>
           <div className="text-center">
-            <button type="submit" className="bg-purple-600 text-white py-3 px-8 rounded-lg font-medium hover:bg-purple-700 transition duration-300">
+            <button type="submit" className="bg-purple-500 hover:scale-105 duration-300  hover:bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg p-10 shadow-lg text-white py-3 px-8 font-medium ">
               Send Message
             </button>
           </div>
