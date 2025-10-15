@@ -1,5 +1,6 @@
 import React from 'react'
-import Hero from '../assets/hero-removebg-preview.png' // Replace with your own image path
+
+import Hero from '/Hero-removebg-preview.png'
 
 const HeroSection = () => {
   return (
