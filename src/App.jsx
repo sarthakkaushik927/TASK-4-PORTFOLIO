@@ -8,7 +8,7 @@ import PortfolioSection from './components/PortfolioSection';
 import TestimonialsSection from './components/TestimonialsSection';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
-import Contactbutton from './components/Contactbutton';
+
 import GoTop from './components/GoTop';
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
         <ContactForm />
       </main>
       <GoTop />
-      <Contactbutton />
+      
       
         
       <Footer />

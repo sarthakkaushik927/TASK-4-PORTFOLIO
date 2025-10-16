@@ -1,6 +1,7 @@
 import React, { useState } from 'react'; // 1. useState import karein
 import { FaReact, FaBars, FaTimes } from "react-icons/fa"; // Icons ko Font Awesome se import karein
 import { TbHexagonLetterSFilled } from "react-icons/tb"
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
   // 2. Menu ke open/closed state ko track karne ke liye state variable banayein
@@ -25,10 +26,10 @@ const Navbar = () => {
         
         {/* Desktop Links */}
         <div className='hidden links md:flex md:flex-row md:space-x-3.5'>
-          <a href="#home" className="text-purple-600 text-xl hover:text-amber-50 md:hover:text-white font-medium hover:font-bold hover:scale-105 duration-300 hover:bg-gradient-to-bl from-purple-700 to-pink-500 p-1 px-2 rounded-lg">Home</a>
-          <a href="#portfolio" className="text-purple-600 text-xl hover:text-white font-medium hover:scale-105 duration-300 hover:bg-gradient-to-bl from-purple-700 to-pink-500 p-1 px-2 rounded-lg">Portfolio</a>
-          <a href="#about" className="text-purple-600 text-xl hover:text-white font-medium hover:scale-105 duration-300 hover:bg-gradient-to-bl from-purple-700 to-pink-500 p-1 px-2 rounded-lg">About Me</a>
-          <a href="#contact" className="text-purple-600 text-xl hover:text-white font-medium hover:scale-105 duration-300 hover:bg-gradient-to-bl from-purple-700 to-pink-500 p-1 px-2 rounded-lg">Contact</a>
+          <Link to="home" smooth={true} duration={500} className="text-purple-600 text-xl hover:text-amber-50 md:hover:text-white font-medium hover:font-bold hover:scale-105 duration-300 hover:bg-gradient-to-bl from-purple-700 to-pink-500 p-1 px-2 rounded-lg">Home</Link>
+          <Link to="portfolio" smooth={true} duration={500} className="text-purple-600 text-xl hover:text-white font-medium hover:scale-105 duration-300 hover:bg-gradient-to-bl from-purple-700 to-pink-500 p-1 px-2 rounded-lg">Portfolio</Link>
+          <Link to="about" smooth={true} duration={500} className="text-purple-600 text-xl hover:text-white font-medium hover:scale-105 duration-300 hover:bg-gradient-to-bl from-purple-700 to-pink-500 p-1 px-2 rounded-lg">About Me</Link>
+          <Link to="contact" smooth={true} duration={500} className="text-purple-600 text-xl hover:text-white font-medium hover:scale-105 duration-300 hover:bg-gradient-to-bl from-purple-700 to-pink-500 p-1 px-2 rounded-lg">Contact</Link>
         </div>
         
         {/* Hamburger Button */}
