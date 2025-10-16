@@ -22,7 +22,7 @@ const SkillsSection = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8  ">
           {skills.map((skill, index) => (
-            <div key={index} className="bg-white p-8 rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col items-center hover:scale-105 hover:duration-300 ">
+            <div key={index} className="ane bg-white p-8 rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col items-center hover:scale-105 hover:duration-300 ">
 
 
               <div className="mb-4"><img className='rounded-lg' src={`${skill.img}`} alt={skill.title} /></div>
