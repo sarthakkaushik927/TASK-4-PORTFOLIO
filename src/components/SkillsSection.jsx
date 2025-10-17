@@ -1,12 +1,13 @@
 import React from 'react';
 import { FaReact, FaNodeJs, FaPaintBrush, FaDraftingCompass } from 'react-icons/fa';
+import { motion } from "motion/react"
 
 const skills = [
-  // I have assigned the icons to the correct skills
+  
   { title: "Strategy & Direction", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", icon: <FaDraftingCompass className="text-4xl text-purple-600" />, img:"https://sp.yimg.com/ib/th/id/OIP.l9QWk7PsqjrZeipRHf0wwgHaJ4?pid=Api&w=148&h=148&c=7&dpr=2&rs=1" },
   { title: "Branding & Logo", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", icon: <FaPaintBrush className="text-4xl text-purple-600" />, img:"https://sp.yimg.com/ib/th/id/OIP.jGHnIsMnheNz_z8quCshTwHaE8?pid=Api&w=148&h=148&c=7&dpr=2&rs=1"  },
   { title: "UI & UX Design", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", icon: <FaReact className="text-4xl text-purple-600" />, img:"https://sp.yimg.com/ib/th/id/OIP.wUls7DK5Xe6qm3SamyPcJgHaE8?pid=Api&w=148&h=148&c=7&dpr=2&rs=1" },
-  // I added the missing icon for the last item
+  
   { title: "Webflow Development", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", icon: <FaNodeJs className="text-4xl text-purple-600" />, img:"https://sp.yimg.com/ib/th/id/OIP.ch892-NBqTfO6OvtZaCEuwHaE8?pid=Api&w=148&h=148&c=7&dpr=2&rs=1"},
 ];
 
@@ -22,14 +23,14 @@ const SkillsSection = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8  ">
           {skills.map((skill, index) => (
-            <div key={index} className="ane bg-white p-8 rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col items-center hover:scale-105 hover:duration-300 ">
+            <motion.div whileTap={{scale:0.8}} transition={{duration:0}} key={index} className="ane bg-white p-8 rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col items-center hover:scale-105 hover:duration-300 ">
 
 
               <div className="mb-4"><img className='rounded-lg' src={`${skill.img}`} alt={skill.title} /></div>
 
               <h3 className="text-xl font-bold text-gray-800 mb-2">{skill.title}</h3>
               <p className="text-gray-600 text-center">{skill.description}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

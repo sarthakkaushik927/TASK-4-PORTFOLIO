@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from "motion/react";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -56,9 +57,9 @@ const ContactForm = () => {
             <textarea id="message" placeholder='Type here....' name="message" value={formData.message} onChange={handleChange} rows="5" className="w-full min-h-45 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600 bg-white shadow-md hover:scale-105 duration-300"></textarea>
           </div>
           <div className="text-center">
-            <button type="submit" className=" bg-purple-500 hover:scale-105 duration-300  hover:bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg p-10 shadow-lg text-white py-3 px-8 font-medium ">
+            <motion.button whileTap={{scale:0.8}} transition={{duration:0}} type="submit" className=" bg-purple-500 hover:scale-105 duration-300  hover:bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg p-10 shadow-lg text-white py-3 px-8 font-medium ">
               Send Message
-            </button>
+            </motion.button>
           </div>
         </form>
       </div>

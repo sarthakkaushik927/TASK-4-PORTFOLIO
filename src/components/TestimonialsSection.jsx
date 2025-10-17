@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from "motion/react";
 
 const TestimonialsSection = () => {
   const testimonials = [
@@ -16,7 +17,7 @@ const TestimonialsSection = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="border border-gray-200 rounded-lg p-6 hover:shadow-xl hover:scale-105 hover:duration-300 transition-all hover:border-purple-500 bg-white">
+            <motion.div whileTap={{scale:0.8}} transition={{duration:0}} key={index} className="border border-gray-200 rounded-lg p-6 hover:shadow-xl hover:scale-105 hover:duration-300 transition-all hover:border-purple-500 bg-white">
               <div className="text-yellow-400 mb-4">{'★★★★★'}</div>
               <p className="text-gray-600 mb-6 italic">{testimonial.text}</p>
               <div className="flex items-center">
@@ -26,7 +27,7 @@ const TestimonialsSection = () => {
                   <p className="text-gray-500">{testimonial.role}</p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

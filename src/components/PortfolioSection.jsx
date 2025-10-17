@@ -2,11 +2,12 @@ import React from 'react';
 import Music from "/music.png"
 import TODO from "/TODO.png"
 import CAROUSEL from "/CAROUSEL-REGISTRATION.png"
+import { motion } from "motion/react";
 
 // Reusable ProjectCard component
 const ProjectCard = ({ title, description, technologies, link, imageUrl }) => {
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden transform hover:border-2 hover:border-purple-500 hover:-translate-y-4 transition-transform duration-300 hover:shadow-2xl  ">
+    <motion.div whileTap={{scale:0.8}} transition={{duration:0}} className="bg-white rounded-lg shadow-md overflow-hidden transform hover:border-2 hover:border-purple-500 hover:-translate-y-4 transition-transform duration-300 hover:shadow-2xl  ">
       <img src={imageUrl} alt={title} className="w-full h-56 object-cover" />
       <div className="p-6">
         <h3 className="text-xl font-bold text-gray-800 mb-2">{title}</h3>
@@ -20,19 +21,21 @@ const ProjectCard = ({ title, description, technologies, link, imageUrl }) => {
           rel="noopener noreferrer" 
           className="text-purple-600 font-medium hover:underline"
         >
-          View Project →
+          <motion.button whileTap={{scale:0.8}} transition={{duration:0}} className="text-purple-600 font-medium hover:underline">
+            View Project →
+          </motion.button>
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
 // Main Portfolio Section
 const PortfolioSection = () => {
     const projects = [
-      { title: "Music App", description: "A web design project for a modern Music layout.", technologies: "HTML, CSS, JavaScript", link: "https://task-1-music-player.vercel.app/", imageUrl: Music },
-      { title: "", description: "A Web app integrated with Carousel and registration form.", technologies: "HTML, CSS, JavaScript", link: "https://task-2-loginpage-and-carousel.vercel.app/", imageUrl: TODO },
-      { title: "TODO LIST", description: "A Web app to save your daily tasks.", technologies: "React , Tailwind CSS", link: "https://todo-list927.netlify.app/", imageUrl: CAROUSEL },
+      { title: "MUSIC APP", description: "A web design project for a modern Music layout.", technologies: "HTML, CSS, JavaScript", link: "https://task-1-music-player.vercel.app/", imageUrl: Music },
+      { title: "TODO LIST", description: "A Web app to save your daily tasks.", technologies: "HTML, CSS, JavaScript", link: "https://task-2-loginpage-and-carousel.vercel.app/", imageUrl: TODO },
+      { title: "CAROUSEL", description: "A Web app integrated with Carousel and registration form.", technologies: "React , Tailwind CSS", link: "https://todo-list927.netlify.app/", imageUrl: CAROUSEL },
     ];
 
     return (
