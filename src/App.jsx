@@ -8,7 +8,7 @@ import PortfolioSection from './components/PortfolioSection';
 import TestimonialsSection from './components/TestimonialsSection';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
-import AnimatedSection from './components/AnimateSection';
+
 
 import GoTop from './components/GoTop';
 

@@ -8,7 +8,7 @@ import Hero from '/Hero-removebg-preview.png'
 
 const HeroSection = () => {
   return (
-    <motion.section id="home" className="bg-purple-100 container mx-auto flex flex-col md:flex-row md:justify gap-12 py-20 px-6 min-h-[75vh] min-w-full">
+    <section id="home" className="bg-purple-100 container mx-auto flex flex-col md:flex-row md:justify gap-12 py-20 px-6 min-h-[75vh] min-w-full">
       
       <div className="md:w-1/2 text-center md:text-left mb-10 md:mb-0 ">
         <p className="inline-block text-gray-500 font-bold  duration-300 hover:scale-x-110 hover:scale-y-100 ">Hey, I am SARTHAK</p>
@@ -33,7 +33,7 @@ const HeroSection = () => {
         />
         
       </div>
-    </motion.section>
+    </section>
   );
 };
 
