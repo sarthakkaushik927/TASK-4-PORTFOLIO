@@ -16,7 +16,7 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Basic validation
+    
     if (!formData.name || !formData.email || !formData.message) {
       alert('Please fill in all required fields.');
       return;

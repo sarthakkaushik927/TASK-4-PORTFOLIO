@@ -9,13 +9,13 @@ const AboutMeSection = () => {
           <h2 className="hover:scale-x-110 inline-block  duration-300 bg-gradient-to-bl from-purple-700 to-pink-500 bg-clip-text text-transparent text-3xl md:text-4xl font-bold my-1">About Me</h2>
       </div>
       
-      <div className="container mx-auto flex flex-col md:flex md:flex-row items-center px-6 h-[60vh]">
+      <div className="container mx-auto flex flex-col  md:flex md:flex-row md:width-full lg:flex lg:flex-row items-center justify-between px-6 h-[60vh]">
         
         
 
-        <div className="md:w-1/2  mb-16 md:mb-0">
+        <div className="md:w-1/2  mb-16 md:mb-0  mx-auto flex justify-center ">
          
-          <div className=" md:w-130 md:h-[349px] md:overflow-y-visible bg-purple-300 rounded-4xl translate-y-20 shadow-2xl hover:scale-105 hover:duration-300 transition-all ">
+          <div className=" md:w-130 md:h-[349px]  bg-purple-300 rounded-4xl translate-y-20 shadow-2xl hover:scale-105 hover:duration-300 transition-all ">
           
                   <img
                       src={Hero}
